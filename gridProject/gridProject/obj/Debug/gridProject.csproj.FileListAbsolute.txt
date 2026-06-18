@@ -1,0 +1,14 @@
+C:\Users\nikol\source\repos\gridProject\gridProject\bin\Debug\gridProject.exe.config
+C:\Users\nikol\source\repos\gridProject\gridProject\bin\Debug\gridProject.exe
+C:\Users\nikol\source\repos\gridProject\gridProject\bin\Debug\gridProject.pdb
+C:\Users\nikol\source\repos\gridProject\gridProject\bin\Debug\System.Data.SQLite.dll
+C:\Users\nikol\source\repos\gridProject\gridProject\obj\Debug\gridProject.csproj.AssemblyReference.cache
+C:\Users\nikol\source\repos\gridProject\gridProject\obj\Debug\gridProject.Forms.AddNodeForm.resources
+C:\Users\nikol\source\repos\gridProject\gridProject\obj\Debug\gridProject.Forms.MainForm.resources
+C:\Users\nikol\source\repos\gridProject\gridProject\obj\Debug\gridProject.Properties.Resources.resources
+C:\Users\nikol\source\repos\gridProject\gridProject\obj\Debug\gridProject.csproj.GenerateResource.cache
+C:\Users\nikol\source\repos\gridProject\gridProject\obj\Debug\gridProject.csproj.CoreCompileInputs.cache
+C:\Users\nikol\source\repos\gridProject\gridProject\obj\Debug\gridProj.FEAD5C0A.Up2Date
+C:\Users\nikol\source\repos\gridProject\gridProject\obj\Debug\gridProject.exe
+C:\Users\nikol\source\repos\gridProject\gridProject\obj\Debug\gridProject.pdb
+C:\Users\nikol\source\repos\gridProject\gridProject\obj\Debug\gridProject.exe.config

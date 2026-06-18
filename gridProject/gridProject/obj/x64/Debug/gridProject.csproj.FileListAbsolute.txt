@@ -1,0 +1,65 @@
+C:\Users\nikol\source\repos\gridProject\gridProject\bin\x64\Debug\gridProject.exe.config
+C:\Users\nikol\source\repos\gridProject\gridProject\bin\x64\Debug\gridProject.exe
+C:\Users\nikol\source\repos\gridProject\gridProject\bin\x64\Debug\gridProject.pdb
+C:\Users\nikol\source\repos\gridProject\gridProject\bin\x64\Debug\System.Data.SQLite.dll
+C:\Users\nikol\source\repos\gridProject\gridProject\bin\x64\Debug\System.Data.SQLite.xml
+C:\Users\nikol\source\repos\gridProject\gridProject\obj\x64\Debug\gridProject.csproj.AssemblyReference.cache
+C:\Users\nikol\source\repos\gridProject\gridProject\obj\x64\Debug\gridProject.Forms.AddNodeForm.resources
+C:\Users\nikol\source\repos\gridProject\gridProject\obj\x64\Debug\gridProject.Forms.MainForm.resources
+C:\Users\nikol\source\repos\gridProject\gridProject\obj\x64\Debug\gridProject.Properties.Resources.resources
+C:\Users\nikol\source\repos\gridProject\gridProject\obj\x64\Debug\gridProject.csproj.GenerateResource.cache
+C:\Users\nikol\source\repos\gridProject\gridProject\obj\x64\Debug\gridProject.csproj.CoreCompileInputs.cache
+C:\Users\nikol\source\repos\gridProject\gridProject\obj\x64\Debug\gridProj.FEAD5C0A.Up2Date
+C:\Users\nikol\source\repos\gridProject\gridProject\obj\x64\Debug\gridProject.exe
+C:\Users\nikol\source\repos\gridProject\gridProject\obj\x64\Debug\gridProject.pdb
+C:\Users\nikol\source\repos\gridProject\gridProject\obj\x64\Debug\gridProject.exe.config
+C:\Users\nikol\source\repos\gridProject\gridProject\bin\x64\Debug\gridProjectDB.db
+C:\Users\zala1.MG\Downloads\gridProjectMGUpload\gridProject\gridProject\bin\x64\Debug\gridProjectDB.db
+C:\Users\zala1.MG\Downloads\gridProjectMGUpload\gridProject\gridProject\bin\x64\Debug\gridProject.exe.config
+C:\Users\zala1.MG\Downloads\gridProjectMGUpload\gridProject\gridProject\bin\x64\Debug\gridProject.exe
+C:\Users\zala1.MG\Downloads\gridProjectMGUpload\gridProject\gridProject\bin\x64\Debug\gridProject.pdb
+C:\Users\zala1.MG\Downloads\gridProjectMGUpload\gridProject\gridProject\bin\x64\Debug\System.Data.SQLite.dll
+C:\Users\zala1.MG\Downloads\gridProjectMGUpload\gridProject\gridProject\bin\x64\Debug\System.Data.SQLite.xml
+C:\Users\zala1.MG\Downloads\gridProjectMGUpload\gridProject\gridProject\obj\x64\Debug\gridProject.csproj.AssemblyReference.cache
+C:\Users\zala1.MG\Downloads\gridProjectMGUpload\gridProject\gridProject\obj\x64\Debug\gridProject.exe.config
+C:\Users\zala1.MG\Downloads\gridProjectMGUpload\gridProject\gridProject\obj\x64\Debug\gridProject.Forms.AddNodeForm.resources
+C:\Users\zala1.MG\Downloads\gridProjectMGUpload\gridProject\gridProject\obj\x64\Debug\gridProject.Forms.MainForm.resources
+C:\Users\zala1.MG\Downloads\gridProjectMGUpload\gridProject\gridProject\obj\x64\Debug\gridProject.Properties.Resources.resources
+C:\Users\zala1.MG\Downloads\gridProjectMGUpload\gridProject\gridProject\obj\x64\Debug\gridProject.csproj.GenerateResource.cache
+C:\Users\zala1.MG\Downloads\gridProjectMGUpload\gridProject\gridProject\obj\x64\Debug\gridProject.csproj.CoreCompileInputs.cache
+C:\Users\zala1.MG\Downloads\gridProjectMGUpload\gridProject\gridProject\obj\x64\Debug\gridProj.FEAD5C0A.Up2Date
+C:\Users\zala1.MG\Downloads\gridProjectMGUpload\gridProject\gridProject\obj\x64\Debug\gridProject.exe
+C:\Users\zala1.MG\Downloads\gridProjectMGUpload\gridProject\gridProject\obj\x64\Debug\gridProject.pdb
+C:\Users\zala1.MG\Downloads\gridProjectMGUpload (2)\gridProjectMGUpload\gridProject\gridProject\bin\x64\Debug\gridProjectDB.db
+C:\Users\zala1.MG\Downloads\gridProjectMGUpload (2)\gridProjectMGUpload\gridProject\gridProject\bin\x64\Debug\gridProject.exe.config
+C:\Users\zala1.MG\Downloads\gridProjectMGUpload (2)\gridProjectMGUpload\gridProject\gridProject\bin\x64\Debug\gridProject.exe
+C:\Users\zala1.MG\Downloads\gridProjectMGUpload (2)\gridProjectMGUpload\gridProject\gridProject\bin\x64\Debug\gridProject.pdb
+C:\Users\zala1.MG\Downloads\gridProjectMGUpload (2)\gridProjectMGUpload\gridProject\gridProject\bin\x64\Debug\System.Data.SQLite.dll
+C:\Users\zala1.MG\Downloads\gridProjectMGUpload (2)\gridProjectMGUpload\gridProject\gridProject\bin\x64\Debug\System.Data.SQLite.xml
+C:\Users\zala1.MG\Downloads\gridProjectMGUpload (2)\gridProjectMGUpload\gridProject\gridProject\obj\x64\Debug\gridProject.csproj.AssemblyReference.cache
+C:\Users\zala1.MG\Downloads\gridProjectMGUpload (2)\gridProjectMGUpload\gridProject\gridProject\obj\x64\Debug\gridProject.exe.config
+C:\Users\zala1.MG\Downloads\gridProjectMGUpload (2)\gridProjectMGUpload\gridProject\gridProject\obj\x64\Debug\gridProject.Forms.AddNodeForm.resources
+C:\Users\zala1.MG\Downloads\gridProjectMGUpload (2)\gridProjectMGUpload\gridProject\gridProject\obj\x64\Debug\gridProject.Forms.MainForm.resources
+C:\Users\zala1.MG\Downloads\gridProjectMGUpload (2)\gridProjectMGUpload\gridProject\gridProject\obj\x64\Debug\gridProject.Properties.Resources.resources
+C:\Users\zala1.MG\Downloads\gridProjectMGUpload (2)\gridProjectMGUpload\gridProject\gridProject\obj\x64\Debug\gridProject.csproj.GenerateResource.cache
+C:\Users\zala1.MG\Downloads\gridProjectMGUpload (2)\gridProjectMGUpload\gridProject\gridProject\obj\x64\Debug\gridProject.csproj.CoreCompileInputs.cache
+C:\Users\zala1.MG\Downloads\gridProjectMGUpload (2)\gridProjectMGUpload\gridProject\gridProject\obj\x64\Debug\gridProj.FEAD5C0A.Up2Date
+C:\Users\zala1.MG\Downloads\gridProjectMGUpload (2)\gridProjectMGUpload\gridProject\gridProject\obj\x64\Debug\gridProject.exe
+C:\Users\zala1.MG\Downloads\gridProjectMGUpload (2)\gridProjectMGUpload\gridProject\gridProject\obj\x64\Debug\gridProject.pdb
+C:\Users\nikol\Downloads\gridProjectMGUpload (3)\gridProjectMGUpload (2)\gridProjectMGUpload\gridProject\gridProject\bin\x64\Debug\gridProjectDB.db
+C:\Users\nikol\Downloads\gridProjectMGUpload (3)\gridProjectMGUpload (2)\gridProjectMGUpload\gridProject\gridProject\bin\x64\Debug\gridProject.exe.config
+C:\Users\nikol\Downloads\gridProjectMGUpload (3)\gridProjectMGUpload (2)\gridProjectMGUpload\gridProject\gridProject\bin\x64\Debug\gridProject.exe
+C:\Users\nikol\Downloads\gridProjectMGUpload (3)\gridProjectMGUpload (2)\gridProjectMGUpload\gridProject\gridProject\bin\x64\Debug\gridProject.pdb
+C:\Users\nikol\Downloads\gridProjectMGUpload (3)\gridProjectMGUpload (2)\gridProjectMGUpload\gridProject\gridProject\bin\x64\Debug\System.Data.SQLite.dll
+C:\Users\nikol\Downloads\gridProjectMGUpload (3)\gridProjectMGUpload (2)\gridProjectMGUpload\gridProject\gridProject\bin\x64\Debug\System.Data.SQLite.xml
+C:\Users\nikol\Downloads\gridProjectMGUpload (3)\gridProjectMGUpload (2)\gridProjectMGUpload\gridProject\gridProject\obj\x64\Debug\gridProject.csproj.AssemblyReference.cache
+C:\Users\nikol\Downloads\gridProjectMGUpload (3)\gridProjectMGUpload (2)\gridProjectMGUpload\gridProject\gridProject\obj\x64\Debug\gridProject.exe.config
+C:\Users\nikol\Downloads\gridProjectMGUpload (3)\gridProjectMGUpload (2)\gridProjectMGUpload\gridProject\gridProject\obj\x64\Debug\gridProject.Forms.AddNodeForm.resources
+C:\Users\nikol\Downloads\gridProjectMGUpload (3)\gridProjectMGUpload (2)\gridProjectMGUpload\gridProject\gridProject\obj\x64\Debug\gridProject.Forms.MainForm.resources
+C:\Users\nikol\Downloads\gridProjectMGUpload (3)\gridProjectMGUpload (2)\gridProjectMGUpload\gridProject\gridProject\obj\x64\Debug\gridProject.Properties.Resources.resources
+C:\Users\nikol\Downloads\gridProjectMGUpload (3)\gridProjectMGUpload (2)\gridProjectMGUpload\gridProject\gridProject\obj\x64\Debug\gridProject.csproj.GenerateResource.cache
+C:\Users\nikol\Downloads\gridProjectMGUpload (3)\gridProjectMGUpload (2)\gridProjectMGUpload\gridProject\gridProject\obj\x64\Debug\gridProject.csproj.CoreCompileInputs.cache
+C:\Users\nikol\Downloads\gridProjectMGUpload (3)\gridProjectMGUpload (2)\gridProjectMGUpload\gridProject\gridProject\obj\x64\Debug\gridProj.FEAD5C0A.Up2Date
+C:\Users\nikol\Downloads\gridProjectMGUpload (3)\gridProjectMGUpload (2)\gridProjectMGUpload\gridProject\gridProject\obj\x64\Debug\gridProject.exe
+C:\Users\nikol\Downloads\gridProjectMGUpload (3)\gridProjectMGUpload (2)\gridProjectMGUpload\gridProject\gridProject\obj\x64\Debug\gridProject.pdb
+C:\Users\nikol\Downloads\gridProjectMGUpload (3)\gridProjectMGUpload (2)\gridProjectMGUpload\gridProject\gridProject\obj\x64\Debug\gridProject.Forms.EditEdges.resources
