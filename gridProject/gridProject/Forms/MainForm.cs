@@ -142,7 +142,7 @@ namespace gridProject.Forms
             if (GraphManager.RestoreLastSnapshot())
             {
                 GraphManager.NetworkNodes = GraphManager.LoadNodesFromDatabase();
-
+                GraphManager.NetworkEdges = GraphManager.LoadEdgesFromDatabase();
                 GraphManager.RefreshNetworkData(treeView1, dataGridView1, graphDisplay);
                 UpdatePowerLabels();
 
@@ -199,7 +199,7 @@ namespace gridProject.Forms
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void deleteNodeBtn_Click(object sender, EventArgs e)
         {
             if (treeView1.SelectedNode == null || treeView1.SelectedNode.Tag == null)
             {
@@ -208,6 +208,14 @@ namespace gridProject.Forms
             }
 
             int selectedNodeId = (int)treeView1.SelectedNode.Tag;
+
+            GraphManager.SaveSnapshot("NodeRemoved", selectedNodeId);
+
+            var snap = GraphManager.ActionHistory.Peek();
+            snap.RemovedNode = GraphManager.NetworkNodes[selectedNodeId];
+            snap.RemovedEdges = GraphManager.NetworkEdges
+                .Where(ed => ed.SourceId == selectedNodeId || ed.TargetId == selectedNodeId)
+                .ToList();
 
             string deleteEdgesQuery = "DELETE FROM Edges WHERE SourceId = @NodeId OR TargetId = @NodeId";
             string deleteNodeQuery = "DELETE FROM Nodes WHERE Id = @NodeId";
@@ -250,7 +258,7 @@ namespace gridProject.Forms
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void editEdgeBtn_Click(object sender, EventArgs e)
         {
             using (EditEdges editEdgesForm = new EditEdges())
             {
@@ -265,6 +273,25 @@ namespace gridProject.Forms
                     UpdatePowerLabels();
                 }
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            using (SQLiteConnection connection = new SQLiteConnection(connectionString))
+            {
+                connection.Open();
+                string queryTest = "UPDATE Edges SET IsActive = 1;";
+                using (SQLiteTransaction transaction = connection.BeginTransaction())
+                {
+                    using (SQLiteCommand command = new SQLiteCommand(queryTest, connection, transaction))
+                    {
+                        command.ExecuteNonQuery();
+                    }
+
+                    transaction.Commit();
+                }
+            }
+            GraphManager.RefreshNetworkData(treeView1, dataGridView1, graphDisplay);
         }
     }
 }

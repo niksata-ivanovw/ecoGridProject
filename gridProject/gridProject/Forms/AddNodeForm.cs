@@ -52,7 +52,7 @@ namespace gridProject.Forms
             TreeViewManager.PopulateTreeView(treeView1);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void createButton_Click(object sender, EventArgs e)
         {
             string nodeName = textBox1.Text;
             int capacity = numericUpDown1.Value > 0 ? (int)numericUpDown1.Value : 0;
@@ -134,8 +134,8 @@ namespace gridProject.Forms
                     foreach (int SourceId in selectedNodeIds)
                     {
                         double lossFactor = generateLossFactor();
-                        string queryInsertEdge = "INSERT INTO Edges(SourceId, TargetId, LossFactor) " +
-    System.FormattableString.Invariant($"VALUES('{SourceId}', '{number}', {lossFactor})");
+                        string queryInsertEdge = "INSERT INTO Edges(SourceId, TargetId, LossFactor, IsActive) " +
+    System.FormattableString.Invariant($"VALUES('{SourceId}', '{number}', {lossFactor}, 1)");
                         using (SQLiteCommand command = new SQLiteCommand(queryInsertEdge, connection))
                         {
                             command.ExecuteNonQuery();
@@ -148,7 +148,7 @@ namespace gridProject.Forms
             this.Close();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void sendRightBtn_Click(object sender, EventArgs e)
         {
             if (treeView1.SelectedNode == null)
             {
@@ -179,7 +179,7 @@ namespace gridProject.Forms
             treeView2.Nodes.Add(node);
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void sendLeftBtn_Click(object sender, EventArgs e)
         {
             if (treeView2.SelectedNode == null)
             {
@@ -191,5 +191,6 @@ namespace gridProject.Forms
 
             treeView2.Nodes.Remove(nodeToRemove); ;
         }
+
     }
 }

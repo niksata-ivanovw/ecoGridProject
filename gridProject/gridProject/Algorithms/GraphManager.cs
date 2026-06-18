@@ -199,6 +199,7 @@ namespace gridProject.Algorithms
                 {
                     SourceId = edge.SourceId,
                     TargetId = edge.TargetId,
+                    LossFactor = edge.LossFactor,
                     IsActive = edge.IsActive
                 });
             }
@@ -228,6 +229,23 @@ namespace gridProject.Algorithms
                     NetworkNodes.Remove(snapshot.AddedNodeId);
                 }
             }
+            if (snapshot.ActionType == "NodeRemoved" && snapshot.RemovedNode != null)
+            {
+                var n = snapshot.RemovedNode;
+                string reinsertNode = $"INSERT INTO Nodes (Id, Name, Type, Capacity, Priority, X, Y) " +
+                                      $"VALUES ({n.Id}, '{n.Name}', '{n.Type}', {n.Capacity}, {n.Priority}, {n.X}, {n.Y})";
+                using (SQLiteConnection conn = new SQLiteConnection(connectionString))
+                {
+                    conn.Open();
+                    new SQLiteCommand(reinsertNode, conn).ExecuteNonQuery();
+                    foreach (var ed in snapshot.RemovedEdges)
+                    {
+                        string reinsertEdge = $"INSERT INTO Edges (SourceId, TargetId, LossFactor, IsActive) " +
+                                              $"VALUES ({ed.SourceId}, {ed.TargetId}, {ed.LossFactor}, {(ed.IsActive ? 1 : 0)})";
+                        new SQLiteCommand(reinsertEdge, conn).ExecuteNonQuery();
+                    }
+                }
+            }
 
             foreach (var nodeSnapshot in snapshot.Nodes.Values)
             {
@@ -240,18 +258,43 @@ namespace gridProject.Algorithms
 
             foreach (var edgeSnapshot in snapshot.Edges)
             {
-                var originalEdge = NetworkEdges.FirstOrDefault(e => e.SourceId == edgeSnapshot.SourceId && e.TargetId == edgeSnapshot.TargetId);
-                if (originalEdge != null)
+                var snapshotEdgeKeys = snapshot.Edges
+    .Select(es => (es.SourceId, es.TargetId)).ToHashSet();
+                var edgesToRemove = NetworkEdges
+                    .Where(e => !snapshotEdgeKeys.Contains((e.SourceId, e.TargetId))).ToList();
+
+                using (SQLiteConnection conn = new SQLiteConnection(connectionString))
                 {
-                    originalEdge.IsActive = edgeSnapshot.IsActive;
-                    string updateQuery = $"UPDATE Edges SET IsActive = {(edgeSnapshot.IsActive ? 1 : 0)} " +
-                             $"WHERE SourceId = {edgeSnapshot.SourceId} AND TargetId = {edgeSnapshot.TargetId}";
-                    using (SQLiteConnection connection = new SQLiteConnection(connectionString))
+                    conn.Open();
+
+                    foreach (var edge in edgesToRemove)
                     {
-                        connection.Open();
-                        using (SQLiteCommand command = new SQLiteCommand(updateQuery, connection))
+                        string del = $"DELETE FROM Edges WHERE SourceId = {edge.SourceId} AND TargetId = {edge.TargetId}";
+                        new SQLiteCommand(del, conn).ExecuteNonQuery();
+                    }
+
+                    foreach (var es in snapshot.Edges)
+                    {
+                        var existing = NetworkEdges.FirstOrDefault(
+                            e => e.SourceId == es.SourceId && e.TargetId == es.TargetId);
+
+                        if (existing != null)
                         {
-                            command.ExecuteNonQuery();
+                            // Edge exists — restore its values
+                            existing.IsActive = es.IsActive;
+                            existing.LossFactor = es.LossFactor;
+                            string upd = $"UPDATE Edges SET IsActive = {(es.IsActive ? 1 : 0)}, LossFactor = {es.LossFactor} " +
+                                         $"WHERE SourceId = {es.SourceId} AND TargetId = {es.TargetId}";
+                            new SQLiteCommand(upd, conn).ExecuteNonQuery();
+                        }
+                        else
+                        {
+                            string del = $"DELETE FROM Edges WHERE SourceId = {es.SourceId} AND TargetId = {es.TargetId}";
+                            new SQLiteCommand(del, conn).ExecuteNonQuery();
+
+                            string ins = $"INSERT INTO Edges (SourceId, TargetId, LossFactor, IsActive) " +
+                                         $"VALUES ({es.SourceId}, {es.TargetId}, {es.LossFactor}, {(es.IsActive ? 1 : 0)})";
+                            new SQLiteCommand(ins, conn).ExecuteNonQuery();
                         }
                     }
                 }

@@ -33,14 +33,14 @@
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.button1 = new System.Windows.Forms.Button();
+            this.createButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.treeView1 = new System.Windows.Forms.TreeView();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.sendRightBtn = new System.Windows.Forms.Button();
+            this.sendLeftBtn = new System.Windows.Forms.Button();
             this.treeView2 = new System.Windows.Forms.TreeView();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
@@ -111,15 +111,15 @@
             0,
             0});
             // 
-            // button1
+            // createButton
             // 
-            this.button1.Location = new System.Drawing.Point(657, 329);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(230, 78);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Създай обект";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.createButton.Location = new System.Drawing.Point(657, 329);
+            this.createButton.Name = "createButton";
+            this.createButton.Size = new System.Drawing.Size(230, 78);
+            this.createButton.TabIndex = 7;
+            this.createButton.Text = "Създай обект";
+            this.createButton.UseVisualStyleBackColor = true;
+            this.createButton.Click += new System.EventHandler(this.createButton_Click);
             // 
             // label2
             // 
@@ -163,25 +163,25 @@
             this.treeView1.Size = new System.Drawing.Size(233, 245);
             this.treeView1.TabIndex = 12;
             // 
-            // button2
+            // sendRightBtn
             // 
-            this.button2.Location = new System.Drawing.Point(744, 109);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(50, 50);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "→";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.sendRightBtn.Location = new System.Drawing.Point(744, 109);
+            this.sendRightBtn.Name = "sendRightBtn";
+            this.sendRightBtn.Size = new System.Drawing.Size(50, 50);
+            this.sendRightBtn.TabIndex = 13;
+            this.sendRightBtn.Text = "→";
+            this.sendRightBtn.UseVisualStyleBackColor = true;
+            this.sendRightBtn.Click += new System.EventHandler(this.sendRightBtn_Click);
             // 
-            // button3
+            // sendLeftBtn
             // 
-            this.button3.Location = new System.Drawing.Point(744, 165);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(50, 50);
-            this.button3.TabIndex = 14;
-            this.button3.Text = "←";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.sendLeftBtn.Location = new System.Drawing.Point(744, 165);
+            this.sendLeftBtn.Name = "sendLeftBtn";
+            this.sendLeftBtn.Size = new System.Drawing.Size(50, 50);
+            this.sendLeftBtn.TabIndex = 14;
+            this.sendLeftBtn.Text = "←";
+            this.sendLeftBtn.UseVisualStyleBackColor = true;
+            this.sendLeftBtn.Click += new System.EventHandler(this.sendLeftBtn_Click);
             // 
             // treeView2
             // 
@@ -196,14 +196,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1041, 484);
             this.Controls.Add(this.treeView2);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.sendLeftBtn);
+            this.Controls.Add(this.sendRightBtn);
             this.Controls.Add(this.treeView1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.createButton);
             this.Controls.Add(this.numericUpDown2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.numericUpDown1);
@@ -227,14 +227,14 @@
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button createButton;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TreeView treeView1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button sendRightBtn;
+        private System.Windows.Forms.Button sendLeftBtn;
         private System.Windows.Forms.TreeView treeView2;
     }
 }

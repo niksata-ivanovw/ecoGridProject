@@ -1,4 +1,5 @@
-﻿using System;
+﻿using gridProject.Algorithms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -117,8 +118,10 @@ namespace gridProject.Forms
             e.DrawFocusRectangle();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void saveChangesBtn_Click(object sender, EventArgs e)
         {
+            GraphManager.SaveSnapshot("EdgeChanged");
+
             string selectedSourceNodeName = comboBox1.SelectedItem?.ToString();
             string selectedTargetNodeName = comboBox2.SelectedItem?.ToString();
 
@@ -169,8 +172,10 @@ namespace gridProject.Forms
             this.Close();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void addNewBtn_Click(object sender, EventArgs e)
         {
+            GraphManager.SaveSnapshot("EdgeChanged");
+
             string selectedSourceNodeName = comboBox3.SelectedItem?.ToString();
             string selectedTargetNodeName = comboBox4.SelectedItem?.ToString();
 
@@ -212,8 +217,10 @@ namespace gridProject.Forms
             this.Close();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void deleteEdgeBtn_Click(object sender, EventArgs e)
         {
+            GraphManager.SaveSnapshot("EdgeChanged");
+
             string selectedSourceNodeName = listBox1.SelectedItem?.ToString().Split('→')[0].Trim();
             string selectedTargetNodeName = listBox1.SelectedItem?.ToString().Split('→')[1].Trim();
 

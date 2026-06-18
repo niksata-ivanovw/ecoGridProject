@@ -34,8 +34,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.treeView1 = new System.Windows.Forms.TreeView();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.editEdgeBtn = new System.Windows.Forms.Button();
+            this.deleteNodeBtn = new System.Windows.Forms.Button();
             this.lblRecommendation = new System.Windows.Forms.Label();
             this.lblCurrentConsumption = new System.Windows.Forms.Label();
             this.lblPowerAvailable = new System.Windows.Forms.Label();
@@ -46,6 +46,7 @@
             this.optimizeNetworkBtn = new System.Windows.Forms.Button();
             this.loadNetworkBtn = new System.Windows.Forms.Button();
             this.graphDisplay = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -70,8 +71,9 @@
             // 
             // splitContainer1.Panel2
             // 
-            this.splitContainer1.Panel2.Controls.Add(this.button2);
             this.splitContainer1.Panel2.Controls.Add(this.button1);
+            this.splitContainer1.Panel2.Controls.Add(this.editEdgeBtn);
+            this.splitContainer1.Panel2.Controls.Add(this.deleteNodeBtn);
             this.splitContainer1.Panel2.Controls.Add(this.lblRecommendation);
             this.splitContainer1.Panel2.Controls.Add(this.lblCurrentConsumption);
             this.splitContainer1.Panel2.Controls.Add(this.lblPowerAvailable);
@@ -125,27 +127,28 @@
             this.treeView1.Size = new System.Drawing.Size(394, 374);
             this.treeView1.TabIndex = 2;
             // 
-            // button2
+            // editEdgeBtn
             // 
-            this.button2.Location = new System.Drawing.Point(1187, 86);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(264, 80);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "change Edhes";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.editEdgeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.editEdgeBtn.Location = new System.Drawing.Point(1247, 86);
+            this.editEdgeBtn.Name = "editEdgeBtn";
+            this.editEdgeBtn.Size = new System.Drawing.Size(140, 80);
+            this.editEdgeBtn.TabIndex = 12;
+            this.editEdgeBtn.Text = "Промени връзка";
+            this.editEdgeBtn.UseVisualStyleBackColor = true;
+            this.editEdgeBtn.Click += new System.EventHandler(this.editEdgeBtn_Click);
             // 
-            // button1
+            // deleteNodeBtn
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(987, 86);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(140, 80);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Изтрий обект";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.deleteNodeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deleteNodeBtn.Location = new System.Drawing.Point(987, 86);
+            this.deleteNodeBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.deleteNodeBtn.Name = "deleteNodeBtn";
+            this.deleteNodeBtn.Size = new System.Drawing.Size(140, 80);
+            this.deleteNodeBtn.TabIndex = 11;
+            this.deleteNodeBtn.Text = "Изтрий обект";
+            this.deleteNodeBtn.UseVisualStyleBackColor = true;
+            this.deleteNodeBtn.Click += new System.EventHandler(this.deleteNodeBtn_Click);
             // 
             // lblRecommendation
             // 
@@ -199,7 +202,7 @@
             // undoActionBtn
             // 
             this.undoActionBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.undoActionBtn.Location = new System.Drawing.Point(748, 86);
+            this.undoActionBtn.Location = new System.Drawing.Point(745, 86);
             this.undoActionBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.undoActionBtn.Name = "undoActionBtn";
             this.undoActionBtn.Size = new System.Drawing.Size(140, 80);
@@ -211,7 +214,7 @@
             // simulateCrashBtn
             // 
             this.simulateCrashBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simulateCrashBtn.Location = new System.Drawing.Point(474, 86);
+            this.simulateCrashBtn.Location = new System.Drawing.Point(507, 86);
             this.simulateCrashBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.simulateCrashBtn.Name = "simulateCrashBtn";
             this.simulateCrashBtn.Size = new System.Drawing.Size(141, 80);
@@ -223,7 +226,7 @@
             // optimizeNetworkBtn
             // 
             this.optimizeNetworkBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.optimizeNetworkBtn.Location = new System.Drawing.Point(221, 86);
+            this.optimizeNetworkBtn.Location = new System.Drawing.Point(260, 86);
             this.optimizeNetworkBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.optimizeNetworkBtn.Name = "optimizeNetworkBtn";
             this.optimizeNetworkBtn.Size = new System.Drawing.Size(144, 80);
@@ -235,7 +238,7 @@
             // loadNetworkBtn
             // 
             this.loadNetworkBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.loadNetworkBtn.Location = new System.Drawing.Point(22, 86);
+            this.loadNetworkBtn.Location = new System.Drawing.Point(60, 86);
             this.loadNetworkBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.loadNetworkBtn.Name = "loadNetworkBtn";
             this.loadNetworkBtn.Size = new System.Drawing.Size(114, 80);
@@ -258,6 +261,16 @@
             this.graphDisplay.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pbGraph_MouseDown);
             this.graphDisplay.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pbGraph_MouseMove);
             this.graphDisplay.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pbGraph_MouseUp);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(1236, 475);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(240, 33);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "testovo butonche -> active";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // MainForm
             // 
@@ -298,7 +311,8 @@
         private System.Windows.Forms.Label lblCurrentConsumption;
         private System.Windows.Forms.Label lblPowerAvailable;
         private System.Windows.Forms.Label lblRecommendation;
+        private System.Windows.Forms.Button deleteNodeBtn;
+        private System.Windows.Forms.Button editEdgeBtn;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
     }
 }

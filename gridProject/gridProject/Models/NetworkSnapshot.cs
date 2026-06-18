@@ -1,4 +1,5 @@
-﻿using System;
+﻿using gridProject.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,6 +18,7 @@ namespace gridProject
     {
         public int SourceId { get; set; }
         public int TargetId { get; set; }
+        public double LossFactor { get; set; }
         public bool IsActive { get; set; }
     }
 
@@ -24,6 +26,8 @@ namespace gridProject
     {
         public string ActionType { get; set; } = "StateChange";
         public int AddedNodeId { get; set; }
+        public Node RemovedNode { get; set; } = null;
+        public List<Edge> RemovedEdges { get; set; } = new List<Edge>();
         public Dictionary<int, NodeSnapshot> Nodes { get; set; } = new Dictionary<int, NodeSnapshot>();
         public List<EdgeSnapshot> Edges { get; set; } = new List<EdgeSnapshot>();
     }
