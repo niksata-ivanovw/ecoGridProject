@@ -57,8 +57,10 @@ namespace gridProject.Algorithms
                 g.DrawEllipse(Pens.Black, node.X - 15, node.Y - 15, 30, 30);
 
                 string label = node.Name;
-                g.DrawString(label, baseFont, Brushes.Black, node.X - 20, node.Y + 18);
+                g.DrawString(label, baseFont, Brushes.White, node.X - 20, node.Y + 18);
             }
+
+
         }
     }
 }

@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SQLite;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
@@ -192,5 +193,68 @@ namespace gridProject.Forms
             treeView2.Nodes.Remove(nodeToRemove); ;
         }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            Panel panel = (Panel)sender;
+            e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
+
+            int radius = 8; 
+            int borderThickness = 1;
+            Color borderColor = ColorTranslator.FromHtml("#CBD5E0");
+
+
+            Rectangle rect = new Rectangle(0, 0, panel.Width - 1, panel.Height - 1);
+
+            using (GraphicsPath path = new GraphicsPath())
+            {
+
+                path.AddArc(rect.X, rect.Y, radius * 2, radius * 2, 180, 90);
+                path.AddArc(rect.Right - (radius * 2), rect.Y, radius * 2, radius * 2, 270, 90);
+                path.AddArc(rect.Right - (radius * 2), rect.Bottom - (radius * 2), radius * 2, radius * 2, 0, 90);
+                path.AddArc(rect.X, rect.Bottom - (radius * 2), radius * 2, radius * 2, 90, 90);
+                path.CloseAllFigures();
+
+
+                panel.Region = new Region(path);
+
+
+                using (Pen pen = new Pen(borderColor, borderThickness))
+                {
+                    e.Graphics.DrawPath(pen, path);
+                }
+            }
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+            Panel panel = (Panel)sender;
+            e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
+
+            int radius = 8;
+            int borderThickness = 1;
+            Color borderColor = ColorTranslator.FromHtml("#CBD5E0");
+
+
+            Rectangle rect = new Rectangle(0, 0, panel.Width - 1, panel.Height - 1);
+
+            using (GraphicsPath path = new GraphicsPath())
+            {
+
+                path.AddArc(rect.X, rect.Y, radius * 2, radius * 2, 180, 90);
+                path.AddArc(rect.Right - (radius * 2), rect.Y, radius * 2, radius * 2, 270, 90);
+                path.AddArc(rect.Right - (radius * 2), rect.Bottom - (radius * 2), radius * 2, radius * 2, 0, 90);
+                path.AddArc(rect.X, rect.Bottom - (radius * 2), radius * 2, radius * 2, 90, 90);
+                path.CloseAllFigures();
+
+
+                panel.Region = new Region(path);
+
+
+                using (Pen pen = new Pen(borderColor, borderThickness))
+                {
+                    e.Graphics.DrawPath(pen, path);
+                }
+            }
+        }
     }
 }

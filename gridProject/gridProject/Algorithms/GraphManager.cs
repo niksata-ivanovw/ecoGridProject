@@ -256,12 +256,17 @@ namespace gridProject.Algorithms
                 }
             }
 
+            var snapshotEdgeKeys = snapshot.Edges
+                .Select(es => (es.SourceId, es.TargetId)).ToHashSet();
+            var edgesToRemove = NetworkEdges
+                .Where(e => !snapshotEdgeKeys.Contains((e.SourceId, e.TargetId))).ToList();
+
             foreach (var edgeSnapshot in snapshot.Edges)
             {
-                var snapshotEdgeKeys = snapshot.Edges
-    .Select(es => (es.SourceId, es.TargetId)).ToHashSet();
-                var edgesToRemove = NetworkEdges
-                    .Where(e => !snapshotEdgeKeys.Contains((e.SourceId, e.TargetId))).ToList();
+                //var snapshotEdgeKeys = snapshot.Edges
+                //    .Select(es => (es.SourceId, es.TargetId)).ToHashSet();
+                //var edgesToRemove = NetworkEdges
+                //    .Where(e => !snapshotEdgeKeys.Contains((e.SourceId, e.TargetId))).ToList();
 
                 using (SQLiteConnection conn = new SQLiteConnection(connectionString))
                 {
@@ -301,6 +306,49 @@ namespace gridProject.Algorithms
             }
 
             return true;
+        }
+
+        public static List<int> FindEmergencyRoute(int targetConsumerId)
+        {
+            var activeSources = NetworkNodes.Values
+                .Where(n => n.Type == "Source" && n.IsActive)
+                .Select(n => n.Id)
+                .ToList();
+
+            foreach (int sourceId in activeSources)
+            {
+                var visited = new HashSet<int>();
+                var path = new List<int>();
+
+                if (RecursiveDFS(sourceId, targetConsumerId, visited, path))
+                    return path; 
+            }
+
+            return null; 
+        }
+
+        private static bool RecursiveDFS(int currentId, int targetId, HashSet<int> visited, List<int> path)
+        {
+            visited.Add(currentId);
+            path.Add(currentId);
+
+            if (currentId == targetId)
+                return true;
+
+            var neighbours = NetworkEdges
+                .Where(e => e.SourceId == currentId || e.TargetId == currentId)
+                .Select(e => e.SourceId == currentId ? e.TargetId : e.SourceId)
+                .Where(neighbourId => !visited.Contains(neighbourId))
+                .ToList();
+
+            foreach (int neighbourId in neighbours)
+            {
+                if (RecursiveDFS(neighbourId, targetId, visited, path))
+                    return true;
+            }
+
+            path.RemoveAt(path.Count - 1);
+            return false;
         }
     }
 }

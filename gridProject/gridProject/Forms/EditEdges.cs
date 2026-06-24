@@ -25,12 +25,16 @@ namespace gridProject.Forms
 
         private void EditEdges_Load(object sender, EventArgs e)
         {
+            groupBox1.ForeColor = ColorTranslator.FromHtml("#1B4F8A");
+            groupBox2.ForeColor = ColorTranslator.FromHtml("#1B4F8A");
+
+
             foreach (var edge in Algorithms.GraphManager.NetworkEdges)
             {
                 string edgeSourceName = Algorithms.GraphManager.NetworkNodes[edge.SourceId].Name;
                 string edgeTargetName = Algorithms.GraphManager.NetworkNodes[edge.TargetId].Name;
                 listBox1.Items.Add($"{edgeSourceName} → {edgeTargetName}");
-                
+
             }
 
             foreach (var node in Algorithms.GraphManager.NetworkNodes.Values)
@@ -251,6 +255,86 @@ namespace gridProject.Forms
             }
             this.DialogResult = DialogResult.OK;
             this.Close();
+        }
+
+        private void groupBox1_Paint(object sender, PaintEventArgs e)
+        {
+            GroupBox groupBox = (GroupBox)sender;
+
+            Color borderColor = ColorTranslator.FromHtml("#CBD5E0");
+
+            using (SolidBrush bgBrush = new SolidBrush(groupBox.BackColor))
+            {
+                e.Graphics.FillRectangle(bgBrush, groupBox.ClientRectangle);
+            }
+
+            Size textSize = TextRenderer.MeasureText(groupBox.Text, groupBox.Font);
+
+            int topOffset = textSize.Height / 2;
+            Rectangle borderRect = new Rectangle(
+                0,
+                topOffset,
+                groupBox.Width - 1,
+                groupBox.Height - topOffset - 1
+            );
+
+            using (Pen pen = new Pen(borderColor, 1))
+            {
+                e.Graphics.DrawLine(pen, borderRect.Left, borderRect.Top, borderRect.Left, borderRect.Bottom);
+                e.Graphics.DrawLine(pen, borderRect.Left, borderRect.Bottom, borderRect.Right, borderRect.Bottom);
+                e.Graphics.DrawLine(pen, borderRect.Right, borderRect.Top, borderRect.Right, borderRect.Bottom);
+
+                int textStartGap = 8;
+                int textEndGap = textStartGap + textSize.Width;
+
+                e.Graphics.DrawLine(pen, borderRect.Left, borderRect.Top, textStartGap, borderRect.Top);
+                e.Graphics.DrawLine(pen, textEndGap, borderRect.Top, borderRect.Right, borderRect.Top);
+            }
+
+            using (SolidBrush textBrush = new SolidBrush(groupBox.ForeColor))
+            {
+                e.Graphics.DrawString(groupBox.Text, groupBox.Font, textBrush, new PointF(8, 0));
+            }
+        }
+
+        private void groupBox2_Paint(object sender, PaintEventArgs e)
+        {
+            GroupBox groupBox = (GroupBox)sender;
+
+            Color borderColor = ColorTranslator.FromHtml("#CBD5E0");
+
+            using (SolidBrush bgBrush = new SolidBrush(groupBox.BackColor))
+            {
+                e.Graphics.FillRectangle(bgBrush, groupBox.ClientRectangle);
+            }
+
+            Size textSize = TextRenderer.MeasureText(groupBox.Text, groupBox.Font);
+
+            int topOffset = textSize.Height / 2;
+            Rectangle borderRect = new Rectangle(
+                0,
+                topOffset,
+                groupBox.Width - 1,
+                groupBox.Height - topOffset - 1
+            );
+
+            using (Pen pen = new Pen(borderColor, 1))
+            {
+                e.Graphics.DrawLine(pen, borderRect.Left, borderRect.Top, borderRect.Left, borderRect.Bottom);
+                e.Graphics.DrawLine(pen, borderRect.Left, borderRect.Bottom, borderRect.Right, borderRect.Bottom);
+                e.Graphics.DrawLine(pen, borderRect.Right, borderRect.Top, borderRect.Right, borderRect.Bottom);
+
+                int textStartGap = 8;
+                int textEndGap = textStartGap + textSize.Width;
+
+                e.Graphics.DrawLine(pen, borderRect.Left, borderRect.Top, textStartGap, borderRect.Top);
+                e.Graphics.DrawLine(pen, textEndGap, borderRect.Top, borderRect.Right, borderRect.Top);
+            }
+
+            using (SolidBrush textBrush = new SolidBrush(groupBox.ForeColor))
+            {
+                e.Graphics.DrawString(groupBox.Text, groupBox.Font, textBrush, new PointF(8, 0));
+            }
         }
     }
 }

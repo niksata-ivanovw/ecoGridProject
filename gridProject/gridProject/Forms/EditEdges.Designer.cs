@@ -58,8 +58,10 @@
             // 
             // listBox1
             // 
+            this.listBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(46)))));
             this.listBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(216)))), ((int)(((byte)(240)))));
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 25;
             this.listBox1.Location = new System.Drawing.Point(12, 62);
@@ -71,25 +73,28 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(95)))), ((int)(((byte)(138)))));
             this.label1.Location = new System.Drawing.Point(7, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(280, 29);
+            this.label1.Size = new System.Drawing.Size(300, 29);
             this.label1.TabIndex = 2;
             this.label1.Text = "Съществуващи връзки:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(95)))), ((int)(((byte)(138)))));
             this.label2.Location = new System.Drawing.Point(608, 19);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(235, 29);
+            this.label2.Size = new System.Drawing.Size(253, 29);
             this.label2.TabIndex = 3;
             this.label2.Text = "Данни за връзката:";
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.groupBox1.Controls.Add(this.saveChangesBtn);
             this.groupBox1.Controls.Add(this.checkBox1);
             this.groupBox1.Controls.Add(this.numericUpDown1);
@@ -106,15 +111,19 @@
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Редактиране";
+            this.groupBox1.Paint += new System.Windows.Forms.PaintEventHandler(this.groupBox1_Paint);
             // 
             // saveChangesBtn
             // 
+            this.saveChangesBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(79)))), ((int)(((byte)(138)))));
+            this.saveChangesBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.saveChangesBtn.ForeColor = System.Drawing.Color.White;
             this.saveChangesBtn.Location = new System.Drawing.Point(237, 258);
             this.saveChangesBtn.Name = "saveChangesBtn";
             this.saveChangesBtn.Size = new System.Drawing.Size(193, 44);
             this.saveChangesBtn.TabIndex = 10;
             this.saveChangesBtn.Text = "Запази промените";
-            this.saveChangesBtn.UseVisualStyleBackColor = true;
+            this.saveChangesBtn.UseVisualStyleBackColor = false;
             this.saveChangesBtn.Click += new System.EventHandler(this.saveChangesBtn_Click);
             // 
             // checkBox1
@@ -146,7 +155,10 @@
             // 
             // comboBox2
             // 
+            this.comboBox2.BackColor = System.Drawing.Color.White;
             this.comboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(46)))));
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.ItemHeight = 22;
             this.comboBox2.Location = new System.Drawing.Point(237, 99);
@@ -157,7 +169,10 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.BackColor = System.Drawing.Color.White;
             this.comboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(46)))));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.ItemHeight = 23;
             this.comboBox1.Location = new System.Drawing.Point(237, 37);
@@ -208,6 +223,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.groupBox2.Controls.Add(this.addNewBtn);
             this.groupBox2.Controls.Add(this.numericUpDown2);
             this.groupBox2.Controls.Add(this.comboBox4);
@@ -221,15 +237,19 @@
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Добавяне на нова връзка";
+            this.groupBox2.Paint += new System.Windows.Forms.PaintEventHandler(this.groupBox2_Paint);
             // 
             // addNewBtn
             // 
+            this.addNewBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
+            this.addNewBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addNewBtn.ForeColor = System.Drawing.Color.White;
             this.addNewBtn.Location = new System.Drawing.Point(237, 248);
             this.addNewBtn.Name = "addNewBtn";
             this.addNewBtn.Size = new System.Drawing.Size(193, 44);
             this.addNewBtn.TabIndex = 11;
             this.addNewBtn.Text = "Добави нова";
-            this.addNewBtn.UseVisualStyleBackColor = true;
+            this.addNewBtn.UseVisualStyleBackColor = false;
             this.addNewBtn.Click += new System.EventHandler(this.addNewBtn_Click);
             // 
             // numericUpDown2
@@ -252,7 +272,10 @@
             // 
             // comboBox4
             // 
+            this.comboBox4.BackColor = System.Drawing.Color.White;
             this.comboBox4.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.comboBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(46)))));
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.ItemHeight = 22;
             this.comboBox4.Location = new System.Drawing.Point(237, 110);
@@ -263,7 +286,10 @@
             // 
             // comboBox3
             // 
+            this.comboBox3.BackColor = System.Drawing.Color.White;
             this.comboBox3.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.comboBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(46)))));
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.ItemHeight = 22;
             this.comboBox3.Location = new System.Drawing.Point(237, 42);
@@ -304,12 +330,15 @@
             // 
             // deleteEdgeBtn
             // 
+            this.deleteEdgeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(57)))), ((int)(((byte)(43)))));
+            this.deleteEdgeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.deleteEdgeBtn.ForeColor = System.Drawing.Color.White;
             this.deleteEdgeBtn.Location = new System.Drawing.Point(758, 711);
             this.deleteEdgeBtn.Name = "deleteEdgeBtn";
             this.deleteEdgeBtn.Size = new System.Drawing.Size(193, 44);
             this.deleteEdgeBtn.TabIndex = 12;
             this.deleteEdgeBtn.Text = "Изтрий връзката";
-            this.deleteEdgeBtn.UseVisualStyleBackColor = true;
+            this.deleteEdgeBtn.UseVisualStyleBackColor = false;
             this.deleteEdgeBtn.Click += new System.EventHandler(this.deleteEdgeBtn_Click);
             // 
             // EditEdges
@@ -324,7 +353,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listBox1);
             this.Name = "EditEdges";
-            this.Text = "Form1";
+            this.Text = "PromeniVruzka";
             this.Load += new System.EventHandler(this.EditEdges_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

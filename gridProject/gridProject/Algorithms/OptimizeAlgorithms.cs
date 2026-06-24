@@ -87,6 +87,15 @@ namespace gridProject.Algorithms
                 }
             }
 
+            foreach (var node in GraphManager.NetworkNodes.Values.Where(n => n.Type == "Consumer" && n.HasPower))
+            {
+                bool hasActiveConnection = GraphManager.NetworkEdges.Any(e =>
+                    (e.SourceId == node.Id || e.TargetId == node.Id) && e.IsActive);
+
+                if (!hasActiveConnection)
+                    node.HasPower = false;
+            }
+
             return true;
         }
     }
