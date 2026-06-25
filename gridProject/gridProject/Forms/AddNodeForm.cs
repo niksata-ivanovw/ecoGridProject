@@ -44,8 +44,6 @@ namespace gridProject.Forms
 
             _generatedX = x;
             _generatedY = y;
-
-            label2.Text = $"Генерирани координати: ({_generatedX}, {_generatedY})";
         }
 
         private void AddNodeForm_Load(object sender, EventArgs e)

@@ -81,8 +81,8 @@
             this.splitContainer1.Panel2.Controls.Add(this.label4);
             this.splitContainer1.Panel2.Controls.Add(this.label3);
             this.splitContainer1.Panel2.Controls.Add(this.graphDisplay);
-            this.splitContainer1.Size = new System.Drawing.Size(2068, 964);
-            this.splitContainer1.SplitterDistance = 563;
+            this.splitContainer1.Size = new System.Drawing.Size(1710, 771);
+            this.splitContainer1.SplitterDistance = 465;
             this.splitContainer1.TabIndex = 0;
             // 
             // label2
@@ -90,9 +90,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.ForeColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(39, 49);
+            this.label2.Location = new System.Drawing.Point(35, 39);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(377, 25);
+            this.label2.Size = new System.Drawing.Size(333, 20);
             this.label2.TabIndex = 5;
             this.label2.Text = "Обекти по електропреносната мрежа:";
             // 
@@ -101,9 +101,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(39, 500);
+            this.label1.Location = new System.Drawing.Point(35, 400);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(374, 25);
+            this.label1.Size = new System.Drawing.Size(332, 20);
             this.label1.TabIndex = 4;
             this.label1.Text = "Връзки по електропреносната мрежа:";
             // 
@@ -115,11 +115,11 @@
             this.treeView1.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.treeView1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(216)))), ((int)(((byte)(240)))));
             this.treeView1.ItemHeight = 26;
-            this.treeView1.Location = new System.Drawing.Point(44, 86);
+            this.treeView1.Location = new System.Drawing.Point(39, 69);
             this.treeView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.treeView1.Name = "treeView1";
             this.treeView1.ShowLines = false;
-            this.treeView1.Size = new System.Drawing.Size(485, 374);
+            this.treeView1.Size = new System.Drawing.Size(431, 299);
             this.treeView1.TabIndex = 2;
             this.treeView1.DrawNode += new System.Windows.Forms.DrawTreeNodeEventHandler(this.treeView1_DrawNode);
             // 
@@ -132,9 +132,10 @@
             this.panel1.Controls.Add(this.simulateCrashBtn);
             this.panel1.Controls.Add(this.deleteNodeBtn);
             this.panel1.Controls.Add(this.undoActionBtn);
-            this.panel1.Location = new System.Drawing.Point(18, 81);
+            this.panel1.Location = new System.Drawing.Point(16, 65);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1452, 111);
+            this.panel1.Size = new System.Drawing.Size(1291, 89);
             this.panel1.TabIndex = 14;
             // 
             // loadNetworkBtn
@@ -143,15 +144,14 @@
             this.loadNetworkBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.loadNetworkBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.loadNetworkBtn.ForeColor = System.Drawing.Color.White;
-            this.loadNetworkBtn.Location = new System.Drawing.Point(30, 14);
+            this.loadNetworkBtn.Location = new System.Drawing.Point(27, 11);
             this.loadNetworkBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.loadNetworkBtn.Name = "loadNetworkBtn";
-            this.loadNetworkBtn.Size = new System.Drawing.Size(114, 80);
+            this.loadNetworkBtn.Size = new System.Drawing.Size(101, 64);
             this.loadNetworkBtn.TabIndex = 2;
             this.loadNetworkBtn.Text = "Зареди мрежата";
             this.loadNetworkBtn.UseVisualStyleBackColor = false;
             this.loadNetworkBtn.Click += new System.EventHandler(this.loadNetworkBtn_Click);
-            this.loadNetworkBtn.Paint += new System.Windows.Forms.PaintEventHandler(this.loadNetworkBtn_Paint);
             // 
             // optimizeNetworkBtn
             // 
@@ -159,15 +159,14 @@
             this.optimizeNetworkBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.optimizeNetworkBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.optimizeNetworkBtn.ForeColor = System.Drawing.Color.White;
-            this.optimizeNetworkBtn.Location = new System.Drawing.Point(238, 14);
+            this.optimizeNetworkBtn.Location = new System.Drawing.Point(212, 11);
             this.optimizeNetworkBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.optimizeNetworkBtn.Name = "optimizeNetworkBtn";
-            this.optimizeNetworkBtn.Size = new System.Drawing.Size(144, 80);
+            this.optimizeNetworkBtn.Size = new System.Drawing.Size(128, 64);
             this.optimizeNetworkBtn.TabIndex = 3;
             this.optimizeNetworkBtn.Text = "Оптимизирай мрежата";
             this.optimizeNetworkBtn.UseVisualStyleBackColor = false;
             this.optimizeNetworkBtn.Click += new System.EventHandler(this.optimizeNetworkBtn_Click);
-            this.optimizeNetworkBtn.Paint += new System.Windows.Forms.PaintEventHandler(this.loadNetworkBtn_Paint);
             // 
             // editEdgeBtn
             // 
@@ -175,14 +174,14 @@
             this.editEdgeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.editEdgeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.editEdgeBtn.ForeColor = System.Drawing.Color.White;
-            this.editEdgeBtn.Location = new System.Drawing.Point(1214, 14);
+            this.editEdgeBtn.Location = new System.Drawing.Point(1079, 11);
+            this.editEdgeBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.editEdgeBtn.Name = "editEdgeBtn";
-            this.editEdgeBtn.Size = new System.Drawing.Size(140, 80);
+            this.editEdgeBtn.Size = new System.Drawing.Size(124, 64);
             this.editEdgeBtn.TabIndex = 12;
             this.editEdgeBtn.Text = "Промени връзка";
             this.editEdgeBtn.UseVisualStyleBackColor = false;
             this.editEdgeBtn.Click += new System.EventHandler(this.editEdgeBtn_Click);
-            this.editEdgeBtn.Paint += new System.Windows.Forms.PaintEventHandler(this.loadNetworkBtn_Paint);
             // 
             // simulateCrashBtn
             // 
@@ -190,15 +189,14 @@
             this.simulateCrashBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.simulateCrashBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simulateCrashBtn.ForeColor = System.Drawing.Color.White;
-            this.simulateCrashBtn.Location = new System.Drawing.Point(470, 14);
+            this.simulateCrashBtn.Location = new System.Drawing.Point(418, 11);
             this.simulateCrashBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.simulateCrashBtn.Name = "simulateCrashBtn";
-            this.simulateCrashBtn.Size = new System.Drawing.Size(141, 80);
+            this.simulateCrashBtn.Size = new System.Drawing.Size(125, 64);
             this.simulateCrashBtn.TabIndex = 4;
             this.simulateCrashBtn.Text = "Симулирай авария";
             this.simulateCrashBtn.UseVisualStyleBackColor = false;
             this.simulateCrashBtn.Click += new System.EventHandler(this.simulateCrashBtn_Click);
-            this.simulateCrashBtn.Paint += new System.Windows.Forms.PaintEventHandler(this.loadNetworkBtn_Paint);
             // 
             // deleteNodeBtn
             // 
@@ -206,15 +204,14 @@
             this.deleteNodeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deleteNodeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deleteNodeBtn.ForeColor = System.Drawing.Color.White;
-            this.deleteNodeBtn.Location = new System.Drawing.Point(958, 14);
+            this.deleteNodeBtn.Location = new System.Drawing.Point(852, 11);
             this.deleteNodeBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.deleteNodeBtn.Name = "deleteNodeBtn";
-            this.deleteNodeBtn.Size = new System.Drawing.Size(140, 80);
+            this.deleteNodeBtn.Size = new System.Drawing.Size(124, 64);
             this.deleteNodeBtn.TabIndex = 11;
             this.deleteNodeBtn.Text = "Изтрий обект";
             this.deleteNodeBtn.UseVisualStyleBackColor = false;
             this.deleteNodeBtn.Click += new System.EventHandler(this.deleteNodeBtn_Click);
-            this.deleteNodeBtn.Paint += new System.Windows.Forms.PaintEventHandler(this.loadNetworkBtn_Paint);
             // 
             // undoActionBtn
             // 
@@ -222,21 +219,21 @@
             this.undoActionBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.undoActionBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.undoActionBtn.ForeColor = System.Drawing.Color.White;
-            this.undoActionBtn.Location = new System.Drawing.Point(707, 14);
+            this.undoActionBtn.Location = new System.Drawing.Point(628, 11);
             this.undoActionBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.undoActionBtn.Name = "undoActionBtn";
-            this.undoActionBtn.Size = new System.Drawing.Size(140, 80);
+            this.undoActionBtn.Size = new System.Drawing.Size(124, 64);
             this.undoActionBtn.TabIndex = 5;
             this.undoActionBtn.Text = "Върни назад";
             this.undoActionBtn.UseVisualStyleBackColor = false;
             this.undoActionBtn.Click += new System.EventHandler(this.undoActionBtn_Click);
-            this.undoActionBtn.Paint += new System.Windows.Forms.PaintEventHandler(this.loadNetworkBtn_Paint);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1234, 871);
+            this.button1.Location = new System.Drawing.Point(1097, 697);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(238, 33);
+            this.button1.Size = new System.Drawing.Size(212, 26);
             this.button1.TabIndex = 13;
             this.button1.Text = "testovo butonche -> active";
             this.button1.UseVisualStyleBackColor = true;
@@ -247,9 +244,9 @@
             this.lblRecommendation.AutoSize = true;
             this.lblRecommendation.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRecommendation.ForeColor = System.Drawing.Color.White;
-            this.lblRecommendation.Location = new System.Drawing.Point(1228, 334);
+            this.lblRecommendation.Location = new System.Drawing.Point(1092, 267);
             this.lblRecommendation.Name = "lblRecommendation";
-            this.lblRecommendation.Size = new System.Drawing.Size(0, 22);
+            this.lblRecommendation.Size = new System.Drawing.Size(0, 18);
             this.lblRecommendation.TabIndex = 10;
             // 
             // lblCurrentConsumption
@@ -257,9 +254,9 @@
             this.lblCurrentConsumption.AutoSize = true;
             this.lblCurrentConsumption.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCurrentConsumption.ForeColor = System.Drawing.Color.Transparent;
-            this.lblCurrentConsumption.Location = new System.Drawing.Point(1228, 288);
+            this.lblCurrentConsumption.Location = new System.Drawing.Point(1092, 230);
             this.lblCurrentConsumption.Name = "lblCurrentConsumption";
-            this.lblCurrentConsumption.Size = new System.Drawing.Size(244, 22);
+            this.lblCurrentConsumption.Size = new System.Drawing.Size(202, 18);
             this.lblCurrentConsumption.TabIndex = 9;
             this.lblCurrentConsumption.Text = "Текущо потребление: 0 MW";
             // 
@@ -268,9 +265,9 @@
             this.lblPowerAvailable.AutoSize = true;
             this.lblPowerAvailable.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPowerAvailable.ForeColor = System.Drawing.Color.Transparent;
-            this.lblPowerAvailable.Location = new System.Drawing.Point(1228, 246);
+            this.lblPowerAvailable.Location = new System.Drawing.Point(1092, 197);
             this.lblPowerAvailable.Name = "lblPowerAvailable";
-            this.lblPowerAvailable.Size = new System.Drawing.Size(219, 22);
+            this.lblPowerAvailable.Size = new System.Drawing.Size(183, 18);
             this.lblPowerAvailable.TabIndex = 8;
             this.lblPowerAvailable.Text = "Налична мощност: 0 MW";
             // 
@@ -279,9 +276,9 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label4.ForeColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(13, 22);
+            this.label4.Location = new System.Drawing.Point(12, 18);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(348, 36);
+            this.label4.Size = new System.Drawing.Size(277, 29);
             this.label4.TabIndex = 7;
             this.label4.Text = "Действия по мрежата:";
             // 
@@ -290,9 +287,9 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.ForeColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(14, 195);
+            this.label3.Location = new System.Drawing.Point(12, 156);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(386, 36);
+            this.label3.Size = new System.Drawing.Size(313, 29);
             this.label3.TabIndex = 6;
             this.label3.Text = "Електропреносна мрежа:";
             // 
@@ -300,10 +297,10 @@
             // 
             this.graphDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(22)))), ((int)(((byte)(40)))));
             this.graphDisplay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.graphDisplay.Location = new System.Drawing.Point(3, 246);
+            this.graphDisplay.Location = new System.Drawing.Point(3, 197);
             this.graphDisplay.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.graphDisplay.Name = "graphDisplay";
-            this.graphDisplay.Size = new System.Drawing.Size(1204, 675);
+            this.graphDisplay.Size = new System.Drawing.Size(1070, 540);
             this.graphDisplay.TabIndex = 0;
             this.graphDisplay.TabStop = false;
             this.graphDisplay.Paint += new System.Windows.Forms.PaintEventHandler(this.graphDisplay_Paint);
@@ -316,22 +313,24 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(22)))), ((int)(((byte)(40)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(44, 546);
+            this.dataGridView1.Location = new System.Drawing.Point(39, 437);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(485, 375);
+            this.dataGridView1.Size = new System.Drawing.Size(431, 300);
             this.dataGridView1.TabIndex = 3;
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(42)))));
-            this.ClientSize = new System.Drawing.Size(2068, 964);
+            this.ClientSize = new System.Drawing.Size(1710, 771);
             this.Controls.Add(this.splitContainer1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "MainForm";
             this.Text = "GlavnaStranica";
             this.Load += new System.EventHandler(this.MainForm_Load);

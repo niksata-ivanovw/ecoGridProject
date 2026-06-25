@@ -304,16 +304,6 @@ namespace gridProject.Forms
             GraphManager.RefreshNetworkData(treeView1, dataGridView1, graphDisplay);
         }
 
-        private void loadNetworkBtn_Paint(object sender, PaintEventArgs e)
-        {
-            loadNetworkBtn.FlatAppearance.BorderColor = ColorTranslator.FromHtml("#2E6DB4");
-            optimizeNetworkBtn.FlatAppearance.BorderColor = ColorTranslator.FromHtml("#2E6DB4");
-            simulateCrashBtn.FlatAppearance.BorderColor = ColorTranslator.FromHtml("#2E6DB4");
-            undoActionBtn.FlatAppearance.BorderColor = ColorTranslator.FromHtml("#2E6DB4");
-            deleteNodeBtn.FlatAppearance.BorderColor = ColorTranslator.FromHtml("#2E6DB4");
-            editEdgeBtn.FlatAppearance.BorderColor = ColorTranslator.FromHtml("#2E6DB4");
-
-        }
 
         private void dataGridView1_Paint(object sender, PaintEventArgs e)
         {
@@ -383,6 +373,13 @@ namespace gridProject.Forms
 
         private void ApplyTheme()
         {
+            loadNetworkBtn.FlatAppearance.BorderColor = ColorTranslator.FromHtml("#2E6DB4");
+            optimizeNetworkBtn.FlatAppearance.BorderColor = ColorTranslator.FromHtml("#2E6DB4");
+            simulateCrashBtn.FlatAppearance.BorderColor = ColorTranslator.FromHtml("#2E6DB4");
+            undoActionBtn.FlatAppearance.BorderColor = ColorTranslator.FromHtml("#2E6DB4");
+            deleteNodeBtn.FlatAppearance.BorderColor = ColorTranslator.FromHtml("#2E6DB4");
+            editEdgeBtn.FlatAppearance.BorderColor = ColorTranslator.FromHtml("#2E6DB4");
+
             treeView1.BackColor = ColorTranslator.FromHtml("#0D1B2A");
             treeView1.ForeColor = ColorTranslator.FromHtml("#A8D8F0");
             treeView1.BorderStyle = BorderStyle.None;
@@ -404,7 +401,7 @@ namespace gridProject.Forms
             dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 9f, FontStyle.Bold);
             dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             dataGridView1.ColumnHeadersHeight = 32;
-            dataGridView1.EnableHeadersVisualStyles = false; // required for header colors to apply
+            dataGridView1.EnableHeadersVisualStyles = false;
 
             dataGridView1.DefaultCellStyle.BackColor = ColorTranslator.FromHtml("#0D1B2A");
             dataGridView1.DefaultCellStyle.ForeColor = ColorTranslator.FromHtml("#A8D8F0");
@@ -416,17 +413,15 @@ namespace gridProject.Forms
             dataGridView1.AlternatingRowsDefaultCellStyle.ForeColor = ColorTranslator.FromHtml("#A8D8F0");
 
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridView1.ScrollBars = ScrollBars.Vertical; // horizontal scroll gone
+            dataGridView1.ScrollBars = ScrollBars.Vertical;
 
-            // After columns are populated
             if (dataGridView1.Columns.Count >= 3)
             {
-                dataGridView1.Columns[0].FillWeight = 30; // Източник
-                dataGridView1.Columns[1].FillWeight = 30; // Получател  
-                dataGridView1.Columns[2].FillWeight = 40; // Загуби по трасето
+                dataGridView1.Columns[0].FillWeight = 30;
+                dataGridView1.Columns[1].FillWeight = 30;
+                dataGridView1.Columns[2].FillWeight = 40;
             }
 
-            // In your ApplyTheme or constructor
             dataGridView1.Parent.BackColor = ColorTranslator.FromHtml("#0D1B2A");
 
             dataGridView1.RowTemplate.Height = 28;
@@ -450,7 +445,6 @@ namespace gridProject.Forms
         protected override void OnHandleCreated(EventArgs e)
         {
             base.OnHandleCreated(e);
-            // Makes vertical scrollbar thinner and slightly more minimal
             foreach (Control c in this.Controls)
             {
                 if (c is VScrollBar vsb)

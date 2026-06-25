@@ -64,9 +64,10 @@
             this.listBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(216)))), ((int)(((byte)(240)))));
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 25;
-            this.listBox1.Location = new System.Drawing.Point(12, 62);
+            this.listBox1.Location = new System.Drawing.Point(11, 50);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(544, 697);
+            this.listBox1.Size = new System.Drawing.Size(484, 558);
             this.listBox1.TabIndex = 1;
             this.listBox1.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.listBox1_DrawItem);
             // 
@@ -75,9 +76,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(95)))), ((int)(((byte)(138)))));
-            this.label1.Location = new System.Drawing.Point(7, 19);
+            this.label1.Location = new System.Drawing.Point(6, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(300, 29);
+            this.label1.Size = new System.Drawing.Size(250, 25);
             this.label1.TabIndex = 2;
             this.label1.Text = "Съществуващи връзки:";
             // 
@@ -86,9 +87,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(95)))), ((int)(((byte)(138)))));
-            this.label2.Location = new System.Drawing.Point(608, 19);
+            this.label2.Location = new System.Drawing.Point(540, 15);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(253, 29);
+            this.label2.Size = new System.Drawing.Size(213, 25);
             this.label2.TabIndex = 3;
             this.label2.Text = "Данни за връзката:";
             // 
@@ -105,9 +106,11 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.ForeColor = System.Drawing.Color.Black;
-            this.groupBox1.Location = new System.Drawing.Point(613, 62);
+            this.groupBox1.Location = new System.Drawing.Point(545, 50);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(490, 319);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(436, 255);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Редактиране";
@@ -118,9 +121,10 @@
             this.saveChangesBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(79)))), ((int)(((byte)(138)))));
             this.saveChangesBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.saveChangesBtn.ForeColor = System.Drawing.Color.White;
-            this.saveChangesBtn.Location = new System.Drawing.Point(237, 258);
+            this.saveChangesBtn.Location = new System.Drawing.Point(211, 206);
+            this.saveChangesBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.saveChangesBtn.Name = "saveChangesBtn";
-            this.saveChangesBtn.Size = new System.Drawing.Size(193, 44);
+            this.saveChangesBtn.Size = new System.Drawing.Size(172, 35);
             this.saveChangesBtn.TabIndex = 10;
             this.saveChangesBtn.Text = "Запази промените";
             this.saveChangesBtn.UseVisualStyleBackColor = false;
@@ -129,9 +133,10 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(237, 222);
+            this.checkBox1.Location = new System.Drawing.Point(211, 178);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(22, 21);
+            this.checkBox1.Size = new System.Drawing.Size(18, 17);
             this.checkBox1.TabIndex = 9;
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
@@ -143,14 +148,15 @@
             0,
             0,
             65536});
-            this.numericUpDown1.Location = new System.Drawing.Point(237, 157);
+            this.numericUpDown1.Location = new System.Drawing.Point(211, 126);
+            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             99,
             0,
             0,
             65536});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(193, 26);
+            this.numericUpDown1.Size = new System.Drawing.Size(172, 22);
             this.numericUpDown1.TabIndex = 8;
             // 
             // comboBox2
@@ -161,9 +167,10 @@
             this.comboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(46)))));
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.ItemHeight = 22;
-            this.comboBox2.Location = new System.Drawing.Point(237, 99);
+            this.comboBox2.Location = new System.Drawing.Point(211, 79);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(193, 28);
+            this.comboBox2.Size = new System.Drawing.Size(172, 28);
             this.comboBox2.TabIndex = 7;
             this.comboBox2.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.comboBox2_DrawItem);
             // 
@@ -175,9 +182,10 @@
             this.comboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(46)))));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.ItemHeight = 23;
-            this.comboBox1.Location = new System.Drawing.Point(237, 37);
+            this.comboBox1.Location = new System.Drawing.Point(211, 30);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(193, 29);
+            this.comboBox1.Size = new System.Drawing.Size(172, 29);
             this.comboBox1.TabIndex = 7;
             this.comboBox1.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.comboBox1_DrawItem);
             // 
@@ -185,9 +193,9 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(6, 222);
+            this.label9.Location = new System.Drawing.Point(5, 178);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(176, 22);
+            this.label9.Size = new System.Drawing.Size(145, 18);
             this.label9.TabIndex = 3;
             this.label9.Text = "Връзката е активна";
             // 
@@ -195,9 +203,9 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(6, 157);
+            this.label5.Location = new System.Drawing.Point(5, 126);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(200, 44);
+            this.label5.Size = new System.Drawing.Size(165, 36);
             this.label5.TabIndex = 2;
             this.label5.Text = "Коефициент на загуби\r\n(Loss Factor)";
             // 
@@ -205,9 +213,9 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(6, 99);
+            this.label4.Location = new System.Drawing.Point(5, 79);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(109, 44);
+            this.label4.Size = new System.Drawing.Size(91, 36);
             this.label4.TabIndex = 1;
             this.label4.Text = "Към възел\r\n(получател)";
             // 
@@ -215,9 +223,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(6, 37);
+            this.label3.Location = new System.Drawing.Point(5, 30);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(98, 44);
+            this.label3.Size = new System.Drawing.Size(82, 36);
             this.label3.TabIndex = 0;
             this.label3.Text = "От възел\r\n(източник)";
             // 
@@ -231,9 +239,11 @@
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Location = new System.Drawing.Point(613, 387);
+            this.groupBox2.Location = new System.Drawing.Point(545, 310);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(490, 311);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox2.Size = new System.Drawing.Size(436, 249);
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Добавяне на нова връзка";
@@ -244,9 +254,10 @@
             this.addNewBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
             this.addNewBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addNewBtn.ForeColor = System.Drawing.Color.White;
-            this.addNewBtn.Location = new System.Drawing.Point(237, 248);
+            this.addNewBtn.Location = new System.Drawing.Point(211, 198);
+            this.addNewBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.addNewBtn.Name = "addNewBtn";
-            this.addNewBtn.Size = new System.Drawing.Size(193, 44);
+            this.addNewBtn.Size = new System.Drawing.Size(172, 35);
             this.addNewBtn.TabIndex = 11;
             this.addNewBtn.Text = "Добави нова";
             this.addNewBtn.UseVisualStyleBackColor = false;
@@ -260,14 +271,15 @@
             0,
             0,
             65536});
-            this.numericUpDown2.Location = new System.Drawing.Point(237, 195);
+            this.numericUpDown2.Location = new System.Drawing.Point(211, 156);
+            this.numericUpDown2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.numericUpDown2.Maximum = new decimal(new int[] {
             99,
             0,
             0,
             65536});
             this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(193, 26);
+            this.numericUpDown2.Size = new System.Drawing.Size(172, 22);
             this.numericUpDown2.TabIndex = 9;
             // 
             // comboBox4
@@ -278,9 +290,10 @@
             this.comboBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(46)))));
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.ItemHeight = 22;
-            this.comboBox4.Location = new System.Drawing.Point(237, 110);
+            this.comboBox4.Location = new System.Drawing.Point(211, 88);
+            this.comboBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(193, 28);
+            this.comboBox4.Size = new System.Drawing.Size(172, 28);
             this.comboBox4.TabIndex = 9;
             this.comboBox4.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.comboBox4_DrawItem);
             // 
@@ -292,9 +305,10 @@
             this.comboBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(46)))));
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.ItemHeight = 22;
-            this.comboBox3.Location = new System.Drawing.Point(237, 42);
+            this.comboBox3.Location = new System.Drawing.Point(211, 34);
+            this.comboBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(193, 28);
+            this.comboBox3.Size = new System.Drawing.Size(172, 28);
             this.comboBox3.TabIndex = 8;
             this.comboBox3.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.comboBox3_DrawItem);
             // 
@@ -302,9 +316,9 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(6, 195);
+            this.label8.Location = new System.Drawing.Point(5, 156);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(199, 44);
+            this.label8.Size = new System.Drawing.Size(165, 36);
             this.label8.TabIndex = 5;
             this.label8.Text = "Коефициент за загуби\r\n(Loss Factor)";
             // 
@@ -312,9 +326,9 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(6, 110);
+            this.label7.Location = new System.Drawing.Point(5, 88);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(109, 44);
+            this.label7.Size = new System.Drawing.Size(91, 36);
             this.label7.TabIndex = 4;
             this.label7.Text = "Към възел\r\n(получател)\r\n";
             // 
@@ -322,9 +336,9 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(6, 42);
+            this.label6.Location = new System.Drawing.Point(5, 34);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(98, 44);
+            this.label6.Size = new System.Drawing.Size(82, 36);
             this.label6.TabIndex = 3;
             this.label6.Text = "От възел\r\n(източник)\r\n";
             // 
@@ -333,9 +347,10 @@
             this.deleteEdgeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(57)))), ((int)(((byte)(43)))));
             this.deleteEdgeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deleteEdgeBtn.ForeColor = System.Drawing.Color.White;
-            this.deleteEdgeBtn.Location = new System.Drawing.Point(758, 711);
+            this.deleteEdgeBtn.Location = new System.Drawing.Point(674, 569);
+            this.deleteEdgeBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.deleteEdgeBtn.Name = "deleteEdgeBtn";
-            this.deleteEdgeBtn.Size = new System.Drawing.Size(193, 44);
+            this.deleteEdgeBtn.Size = new System.Drawing.Size(172, 35);
             this.deleteEdgeBtn.TabIndex = 12;
             this.deleteEdgeBtn.Text = "Изтрий връзката";
             this.deleteEdgeBtn.UseVisualStyleBackColor = false;
@@ -343,15 +358,18 @@
             // 
             // EditEdges
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1135, 767);
+            this.ClientSize = new System.Drawing.Size(1009, 614);
             this.Controls.Add(this.deleteEdgeBtn);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listBox1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "EditEdges";
             this.Text = "PromeniVruzka";
             this.Load += new System.EventHandler(this.EditEdges_Load);

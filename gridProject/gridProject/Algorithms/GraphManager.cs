@@ -43,8 +43,6 @@ namespace gridProject.Algorithms
 
         public static Stack<NetworkSnapshot> ActionHistory = new Stack<NetworkSnapshot>();
 
-        public static Queue<Node> PendingConnections = new Queue<Node>();
-
         public static List<Edge> LoadEdgesFromDatabase()
         {
             List<Edge> edges = new List<Edge>();
@@ -285,7 +283,6 @@ namespace gridProject.Algorithms
 
                         if (existing != null)
                         {
-                            // Edge exists — restore its values
                             existing.IsActive = es.IsActive;
                             existing.LossFactor = es.LossFactor;
                             string upd = $"UPDATE Edges SET IsActive = {(es.IsActive ? 1 : 0)}, LossFactor = {es.LossFactor} " +
@@ -308,24 +305,24 @@ namespace gridProject.Algorithms
             return true;
         }
 
-        public static List<int> FindEmergencyRoute(int targetConsumerId)
-        {
-            var activeSources = NetworkNodes.Values
-                .Where(n => n.Type == "Source" && n.IsActive)
-                .Select(n => n.Id)
-                .ToList();
+        //public static List<int> FindEmergencyRoute(int targetConsumerId)
+        //{
+        //    var activeSources = NetworkNodes.Values
+        //        .Where(n => n.Type == "Source" && n.IsActive)
+        //        .Select(n => n.Id)
+        //        .ToList();
 
-            foreach (int sourceId in activeSources)
-            {
-                var visited = new HashSet<int>();
-                var path = new List<int>();
+        //    foreach (int sourceId in activeSources)
+        //    {
+        //        var visited = new HashSet<int>();
+        //        var path = new List<int>();
 
-                if (RecursiveDFS(sourceId, targetConsumerId, visited, path))
-                    return path; 
-            }
+        //        if (RecursiveDFS(sourceId, targetConsumerId, visited, path))
+        //            return path;
+        //    }
 
-            return null; 
-        }
+        //    return null;
+        //}
 
         private static bool RecursiveDFS(int currentId, int targetId, HashSet<int> visited, List<int> path)
         {

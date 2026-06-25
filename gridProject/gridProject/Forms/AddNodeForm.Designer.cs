@@ -59,7 +59,7 @@
             this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(46)))));
             this.textBox1.Location = new System.Drawing.Point(35, 113);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(282, 28);
+            this.textBox1.Size = new System.Drawing.Size(282, 24);
             this.textBox1.TabIndex = 0;
             // 
             // label1
@@ -67,7 +67,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(31, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(389, 22);
+            this.label1.Size = new System.Drawing.Size(330, 18);
             this.label1.TabIndex = 1;
             this.label1.Text = "Въведете нов обект с име във формата:\r\n";
             // 
@@ -88,7 +88,7 @@
             0,
             0});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(133, 28);
+            this.numericUpDown1.Size = new System.Drawing.Size(133, 24);
             this.numericUpDown1.TabIndex = 4;
             // 
             // label3
@@ -96,7 +96,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(31, 211);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(382, 44);
+            this.label3.Size = new System.Drawing.Size(324, 36);
             this.label3.TabIndex = 5;
             this.label3.Text = "Моля въведете мощност/потребление и\r\nприоритет на обекта.";
             // 
@@ -117,7 +117,7 @@
             0,
             0});
             this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(133, 28);
+            this.numericUpDown2.Size = new System.Drawing.Size(133, 24);
             this.numericUpDown2.TabIndex = 6;
             this.numericUpDown2.Value = new decimal(new int[] {
             1,
@@ -143,7 +143,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(52, 153);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 22);
+            this.label2.Size = new System.Drawing.Size(0, 18);
             this.label2.TabIndex = 8;
             // 
             // label4
@@ -152,7 +152,7 @@
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
             this.label4.Location = new System.Drawing.Point(209, 273);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(241, 44);
+            this.label4.Size = new System.Drawing.Size(204, 36);
             this.label4.TabIndex = 9;
             this.label4.Text = "[мощност / потребление]\r\n\r\n";
             // 
@@ -162,7 +162,7 @@
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
             this.label5.Location = new System.Drawing.Point(209, 334);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(117, 22);
+            this.label5.Size = new System.Drawing.Size(98, 18);
             this.label5.TabIndex = 10;
             this.label5.Text = "[приоритет]";
             // 
@@ -171,7 +171,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(3, 28);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(397, 22);
+            this.label6.Size = new System.Drawing.Size(335, 18);
             this.label6.TabIndex = 11;
             this.label6.Text = "Изберете връзките на обекта в мрежата:\r\n";
             // 
@@ -242,7 +242,7 @@
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
             this.label7.Location = new System.Drawing.Point(31, 69);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(488, 22);
+            this.label7.Size = new System.Drawing.Size(414, 18);
             this.label7.TabIndex = 11;
             this.label7.Text = "(SRCE/SUST/CON-име на обекта-номер на обекта)";
             // 
@@ -265,7 +265,7 @@
             // 
             // AddNodeForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(42)))));
             this.ClientSize = new System.Drawing.Size(1296, 575);
@@ -273,6 +273,8 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "AddNodeForm";
             this.Text = "DobaviObekt";
             this.Load += new System.EventHandler(this.AddNodeForm_Load);
