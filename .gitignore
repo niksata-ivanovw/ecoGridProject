@@ -1,0 +1,13 @@
+# Visual Studio & C# Build Output
+**/[Bb]in/
+**/[Oo]bj/
+**/.vs/
+**/packages/
+
+# User-specific & compiled files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.dll
+*.exe
